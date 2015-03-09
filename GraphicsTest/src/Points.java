@@ -14,20 +14,9 @@ class Surface extends JComponent {
 
     private void doDrawing(Graphics g) {
 
-    	Graphics2D g2 = (Graphics2D) g;
-		g2.drawRect(100, 50, 10, 50);
-		g2.fillRect(10, 50, 10, 50);
-		
-		//loads/reads image
-		BufferedImage img = null;
-		try {
-		    img = ImageIO.read(new File("crate.png"));
-		} catch (IOException e) {
-			System.out.println("nothing");
-		}
-		//draws image onto xy co-ord 
-		g2.drawImage(img, 10, 50, null);
-		
+    	//cast Graphics to Graphics2D
+    	
+    	//drawWhatever Use outline() for taking a shape of something   Crop a shape(s) and print an image
 		
         }
 
@@ -48,7 +37,7 @@ public class Points extends JFrame {
 
     private void initUI() {
         
-        setTitle("Points");
+        setTitle("Graphics2D");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         //adds surface(JComponent/JPanel with Graphics drawings)
